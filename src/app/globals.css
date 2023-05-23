@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* init fonts globally */
+html {
+  font-family: var(--inter);
+  @apply text-brown-dark font-medium;
+}
+
+p {
+  @apply mb-4;
+}
+
+body {
+  @apply bg-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold mb-4;
+  font-family: var(--suwannaphum);
+
+}
+
+h1 {
+  @apply text-3xl md:text-4xl;
+}
+
+h2 {
+  @apply text-2xl md:text-3xl;
+}
+
+h3 {
+  @apply text-xl md:text-2xl;
+}
+
+ol {
+  @apply list-decimal list-inside p-4;
+
+}
+
+.max2lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
