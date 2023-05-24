@@ -1,4 +1,5 @@
 import { Inter, Suwannaphum } from 'next/font/google';
+import { useEffect } from 'react';
 import './globals.css';
 
 export const inter = Inter({ subsets: ['latin'], variable: '--inter' });
@@ -19,8 +20,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en" className={inter.variable + ' ' + suwannaphum.variable}>
-			<body className={' bg-dark'}>{children}</body>
+		<html
+			lang="en"
+			className={
+				inter.variable +
+				' !cursor-none  lg:[&_*]:!cursor-none ' +
+				suwannaphum.variable
+			}
+		>
+			<body className={' min-h-screen bg-dark'}>{children}</body>
 		</html>
 	);
 }

@@ -1,3 +1,4 @@
+import { blogsMeta } from '@/data/blogs';
 import Link from 'next/link';
 import Button from './Button';
 
@@ -28,7 +29,7 @@ const Header = () => {
 				</Button>
 				<Button
 					as={Link}
-					href="/blog"
+					href={'/' + blogsMeta?.slug}
 					className=" bg-transparent px-12 "
 				>
 					Blog

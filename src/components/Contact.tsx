@@ -1,4 +1,5 @@
 import erwinguus from '@/assets/images/erwinguus.jpg';
+import profielfoto from '@/assets/images/profielfoto.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import BottomLink from './BottomLink';
@@ -9,15 +10,15 @@ const Contact = ({ className, ...rest }: any) => {
 		<div {...rest} className={'flex flex-col rounded-4xl ' + className}>
 			<div className="flex-1 p-7">
 				<div className=" flex items-start justify-between">
-					<CircleLabel className="mb-6 block w-max">
+					<CircleLabel className="mb-4 block w-max">
 						Contact
 					</CircleLabel>
-					<div className="relative aspect-square h-14  overflow-hidden rounded-full">
+					<div className="relative -mt-2 aspect-square h-16  overflow-hidden rounded-full">
 						<div className="absolute inset-0 z-10 bg-brown-light opacity-50 mix-blend-color"></div>
 						<Image
-							src={erwinguus}
+							src={profielfoto}
 							alt={'Erwin Wijnveld'}
-							className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+							className="origin-top scale-150 object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
 							fill
 						/>
 					</div>
