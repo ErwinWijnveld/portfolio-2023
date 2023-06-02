@@ -1,3 +1,4 @@
+import PageTransition from '@/components/PageTransition';
 import { Inter, Suwannaphum } from 'next/font/google';
 import { useEffect } from 'react';
 import './globals.css';

@@ -71,7 +71,9 @@ const CustomCursor = () => {
 
 	return (
 		<>
+			{/* small circle */}
 			<div
+				id="small-cursor"
 				ref={smallCursorRef}
 				className="pointer-events-none fixed -left-20 -top-20 z-[9999] flex h-[6px] w-[6px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-light mix-blend-hard-light "
 			/>

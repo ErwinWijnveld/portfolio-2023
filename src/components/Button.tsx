@@ -8,7 +8,7 @@ const Button = ({
 		<Component
 			{...rest}
 			className={
-				'rounded-full border border-inherit p-3 text-center font-medium ' +
+				'rounded-full border border-inherit p-2 text-center font-medium lg:p-3 ' +
 				className
 			}
 		>

@@ -1,7 +1,9 @@
+import town from '@/assets/images/town.jpg';
 import BottomLink from '@/components/BottomLink';
 import CircleLabel from '@/components/CircleLabel';
 import Contact from '@/components/Contact';
 import Layout from '@/components/Layout';
+import VerticalCard from '@/components/VerticalCard';
 import { blogs } from '@/data/blogs';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -25,18 +27,17 @@ const page = async ({ params: { slug } }: any) => {
 		.reverse()
 		.slice(0, 4);
 
-	console.log(page);
-
 	return (
 		<Layout>
 			<section className="container flex items-start gap-2">
 				<div className="flex w-1/3 flex-col">
-					<div className="mb-2 flex h-full flex-col rounded-4xl bg-primary p-7">
-						<CircleLabel className="mb-2 block w-max">
-							Lees meer
-						</CircleLabel>
-						<h2 className="mb-0">Gerelateerde artikelen</h2>
-					</div>
+					<VerticalCard
+						className="mb-2 aspect-[1.4] bg-brown"
+						label="Blogartikelen"
+						title="Gerelateerde artikelen"
+						imageSrc={town}
+						imageAlt="Dorpje waar de informatie spreid"
+					/>
 					{relatedBlogs?.map((blog, index) => (
 						<div
 							key={index}

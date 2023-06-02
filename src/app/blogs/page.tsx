@@ -28,7 +28,7 @@ const page = () => {
 					if (first) {
 						return (
 							<HorizontalCard
-								className={'col-span-2 bg-primary-light'}
+								className={'bg-primary-light sm:col-span-2'}
 								label="Laatste blogartikel"
 								title={blog.title}
 								imageSrc={town}
@@ -43,7 +43,7 @@ const page = () => {
 							className={
 								Math.random() < 0.5 ? 'bg-brown' : 'bg-primary'
 							}
-							classNameTitle="lg:text-2xl -mb-4"
+							classNameTitle="lg:!text-2xl -mb-4"
 							classNameImageCover="bg-brown"
 							title={blog.title}
 							content={blog.description}

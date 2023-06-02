@@ -19,7 +19,7 @@ const Card = ({
 			className={'group flex flex-col rounded-4xl ' + className}
 			{...rest}
 		>
-			<div className="flex h-full flex-col p-3">
+			<div className="flex h-full flex-1 flex-col p-3">
 				{imageSrc && (
 					<div className="relative w-full flex-1 overflow-hidden rounded-3xl">
 						<div
@@ -39,7 +39,7 @@ const Card = ({
 				<div className="p-4">
 					<h2
 						className={
-							'flex items-center justify-between lg:text-4xl ' +
+							'flex flex-col-reverse justify-between gap-4 md:flex-row md:items-center md:gap-0 lg:text-4xl ' +
 							classNameTitle
 						}
 					>

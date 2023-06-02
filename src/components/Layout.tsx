@@ -1,4 +1,5 @@
 import CustomCursor from './CustomCursor';
+import Footer from './Footer';
 import Header from './Header';
 
 const Layout = ({ children, ...rest }: any) => {
@@ -7,6 +8,7 @@ const Layout = ({ children, ...rest }: any) => {
 			<Header />
 			<CustomCursor />
 			<main {...rest}>{children}</main>
+			<Footer />
 		</>
 	);
 };

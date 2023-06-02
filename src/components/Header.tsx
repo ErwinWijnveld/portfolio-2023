@@ -9,37 +9,40 @@ const Header = () => {
 				<Button
 					as={Link}
 					href="/"
-					className=" border-primary-dark bg-primary-dark px-28 "
+					className=" flex-1 border-primary-dark bg-primary-dark text-sm sm:text-base lg:flex-none lg:px-16 xl:px-28 "
 				>
 					Erwin Wijnveld
 				</Button>
 				<Button
 					as={Link}
 					href="/projecten"
-					className=" bg-primary-light px-12  text-black"
+					className=" hidden bg-transparent duration-200 hover:bg-primary-light hover:text-primary-dark hover:transition-all lg:flex lg:px-12"
 				>
 					Projecten
 				</Button>
 				<Button
 					as={Link}
 					href="/over-mij"
-					className=" bg-transparent px-12 "
+					className=" hidden bg-transparent duration-200 hover:bg-primary-light hover:text-primary-dark hover:transition-all lg:flex lg:px-12"
 				>
 					Over mij
 				</Button>
 				<Button
 					as={Link}
 					href={'/' + blogsMeta?.slug}
-					className=" bg-transparent px-12 "
+					className=" hidden bg-transparent duration-200 hover:bg-primary-light hover:text-primary-dark hover:transition-all lg:flex lg:px-12"
 				>
 					Blog
 				</Button>
 				<Button
 					as={Link}
 					href="/contact"
-					className="ml-auto bg-transparent px-12"
+					className="ml-auto hidden bg-transparent duration-200 hover:bg-primary-light hover:text-primary-dark hover:transition-all lg:flex lg:px-12"
 				>
 					Neem contact op
+				</Button>
+				<Button className="ml-auto flex bg-transparent px-8 text-sm sm:text-base lg:hidden">
+					Menu
 				</Button>
 			</div>
 		</nav>

@@ -17,7 +17,7 @@ const VerticalCard = ({
 			className={'group flex flex-col rounded-4xl ' + className}
 			{...rest}
 		>
-			<div className="flex h-full flex-col p-3">
+			<div className="flex h-full flex-1 flex-col p-3">
 				<div className="p-4">
 					<CircleLabel className="mb-4 block w-max">
 						{label}
@@ -34,9 +34,11 @@ const VerticalCard = ({
 					/>
 				</div>
 			</div>
-			<BottomLink className="mt-4" href={href} as={Link}>
-				Lees meer
-			</BottomLink>
+			{href && (
+				<BottomLink className="mt-4" href={href} as={Link}>
+					Lees meer
+				</BottomLink>
+			)}
 		</div>
 	);
 };
