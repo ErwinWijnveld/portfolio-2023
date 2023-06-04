@@ -22,7 +22,7 @@ const BlurCtaBanner = () => {
 						alt="Erwin met een hond"
 					/>
 					<div className="w-full flex-auto">
-						<h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+						<h2 className="text-3xl font-bold tracking-tight text-primary-light sm:text-4xl">
 							Erwin Wijnveld
 						</h2>
 						<p className="mt-6 leading-6 text-gray-300">

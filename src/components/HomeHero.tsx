@@ -1,12 +1,8 @@
 import erwinguus from '@/assets/images/erwinguus.jpg';
 import town from '@/assets/images/town.jpg';
 import { blogsMeta } from '@/data/blogs';
-import { projects, projectsMeta } from '@/data/projects.js';
-import Image from 'next/image';
-import Link from 'next/link';
-import BottomLink from './BottomLink';
+import { projectsMeta } from '@/data/projects.js';
 import Card from './Card';
-import CircleLabel from './CircleLabel';
 import Contact from './Contact';
 import HorizontalCard from './HorizontalCard';
 import VerticalCard from './VerticalCard';
@@ -20,7 +16,8 @@ const HomeHero = () => {
 				title={projectsMeta.featured?.title}
 				imageSrc={projectsMeta.featured?.thumbnail?.image}
 				imageAlt={projectsMeta.featured?.thumbnail?.alt}
-				href={projectsMeta?.slug + '/' + projectsMeta.featured?.slug}
+				href={'https://strivesports.nl/'}
+				buttonTitle="Bekijk website"
 			/>
 			<div className="flex w-full flex-col gap-2 lg:w-2/3">
 				<HorizontalCard

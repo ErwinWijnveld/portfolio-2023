@@ -9,6 +9,7 @@ const VerticalCard = ({
 	imageSrc,
 	imageAlt,
 	href,
+	buttonTitle,
 	className,
 	...rest
 }: any) => {
@@ -36,7 +37,7 @@ const VerticalCard = ({
 			</div>
 			{href && (
 				<BottomLink className="mt-4" href={href} as={Link}>
-					Lees meer
+					{buttonTitle}
 				</BottomLink>
 			)}
 		</div>
