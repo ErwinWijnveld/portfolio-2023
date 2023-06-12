@@ -6,7 +6,7 @@ import Meta from './Meta';
 const Layout = ({ children, meta, ...rest }: any) => {
 	return (
 		<>
-			<Meta {...meta} />
+			{/* <Meta {...meta} /> */}
 			<Header />
 			<CustomCursor />
 			<main {...rest}>{children}</main>

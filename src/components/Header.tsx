@@ -13,13 +13,13 @@ const Header = () => {
 				>
 					Erwin Wijnveld
 				</Button>
-				<Button
+				{/* <Button
 					as={Link}
 					href="/projecten"
 					className=" hidden bg-transparent duration-200 hover:bg-primary-light hover:text-primary-dark hover:transition-all lg:flex lg:px-12"
 				>
 					Projecten
-				</Button>
+				</Button> */}
 				<Button
 					as={Link}
 					href="/over-mij"

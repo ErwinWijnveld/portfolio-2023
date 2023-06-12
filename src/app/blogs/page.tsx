@@ -6,6 +6,10 @@ import Layout from '@/components/Layout';
 import VerticalCard from '@/components/VerticalCard';
 import { blogs, blogsMeta } from '@/data/blogs';
 import { projectsMeta } from '@/data/projects';
+import { Metadata } from 'next';
+
+// export const metadata: Metadata = {
+// };
 
 const page = () => {
 	// reverse blog array
